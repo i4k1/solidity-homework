@@ -5,11 +5,11 @@ contract stormem {
     uint public numberPlus;
 
     function testMemory(uint _input) public pure returns(uint) {
-        return input * 2;
+        return _input * 2;
     }
 
     function testStorage(uint _input) public returns(uint) {
-        numberPlus += input;
+        numberPlus += _input;
         return numberPlus;
     }
 }
